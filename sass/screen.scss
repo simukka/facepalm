@@ -26,10 +26,11 @@ body,html {
 			float: left;
 			margin: 5px;
 			position: relative;
+			@include transition(all, 1s ease);
 			&.hide {
 				display: none;
 			}
-			&.glow {
+			&.highlight {
   			@include background(radial-gradient(#08CCF9,#0D9CD8 150px));
  				@include box-shadow(0 0 40px #0D9CD8);
   			border: 1px solid rgba(255,255,255,.2);				
@@ -60,10 +61,13 @@ body,html {
 			}
 			.mini-message{
 				position: absolute;
-				bottom: -20px;
+				bottom: -15px;
 				font-weight: 100;
+				font-size: .9em;
 				width: 100%;
-				color: rgba(255,255,255,.5);
+				color: #0D9CD8;
+				text-shadow: 0 0 5px #0D9CD8;
+				text-align: center;
 			}
 		}
 	}
