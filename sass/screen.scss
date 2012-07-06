@@ -1,0 +1,70 @@
+@import 'compass/css3';
+@import "compass/css3/transition";
+@import "compass/css3/images";
+@import 'http://localhost:3001/devassets/quilt.css';
+
+body,html {
+	@include border-radius(0px);
+}
+#wall {
+	@include border-radius(0px);
+	@include box-shadow(inset 0 0 50px rgba(0,0,0,.5));
+	
+	height: 100%;
+	width: 100%;
+	#faces {
+		display: inline-block;
+		padding: 1em;
+		
+		.face {
+			width: 150px;
+			height: 150px;
+			@include background(linear-gradient(top,rgba(255,255,255,.9),rgba(255,255,255,.7)));
+			@include border-radius(5px);
+			@include box-shadow(0 1px 1px rgba(0,0,0,.1),inset 0 1px rgba(255,255,255,.1));
+			border: 1px solid rgba(0,0,0,.75);
+			float: left;
+			margin: 5px;
+			position: relative;
+			&.hide {
+				display: none;
+			}
+			&.glow {
+  			@include background(radial-gradient(#08CCF9,#0D9CD8 150px));
+ 				@include box-shadow(0 0 40px #0D9CD8);
+  			border: 1px solid rgba(255,255,255,.2);				
+			}
+			.avatar {
+				position: absolute;
+				top: 10px;
+				bottom: 10px;
+				left: 10px;
+				right: 10px;
+				@include border-radius(3px);
+				@include box-shadow(0 1px rgba(255,255,255,.2),inset 0 0 10px rgba(0,0,0,.1));
+				border: 1px solid rgba(0,0,0,.1);
+				overflow: hidden;
+				img {
+					@include border-radius(3px);
+					height: 100%;
+					width: 100%;
+				}
+				.janrain-icon-64 {
+					margin: 32px;
+					color: rgba(0,0,0,.2);
+					text-shadow: 0 1px rgba(255,255,255,.5);
+				}
+			}
+			.profile {
+				display: none;
+			}
+			.mini-message{
+				position: absolute;
+				bottom: -20px;
+				font-weight: 100;
+				width: 100%;
+				color: rgba(255,255,255,.5);
+			}
+		}
+	}
+}
