@@ -70,8 +70,11 @@ body, html {
   -moz-box-shadow: 0 0 40px #0d9cd8;
   box-shadow: 0 0 40px #0d9cd8;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 150px;
+  height: 150px;
+  position: absolute;
 }
-/* line 39, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 #wall #faces .face .avatar {
   position: absolute;
   top: 10px;
@@ -89,7 +92,7 @@ body, html {
   border: 1px solid rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
-/* line 49, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #wall #faces .face .avatar img {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -99,17 +102,17 @@ body, html {
   height: 100%;
   width: 100%;
 }
-/* line 54, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 #wall #faces .face .avatar .janrain-icon-64 {
   margin: 32px;
   color: rgba(0, 0, 0, 0.2);
   text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 }
-/* line 60, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #wall #faces .face .profile {
   display: none;
 }
-/* line 63, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 #wall #faces .face .mini-message {
   position: absolute;
   bottom: -15px;
@@ -119,4 +122,35 @@ body, html {
   color: #0D9CD8;
   text-shadow: 0 0 5px #0D9CD8;
   text-align: center;
+}
+/* line 78, ../sass/screen.scss */
+#wall #feed {
+  display: block;
+  padding: 1em;
+}
+/* line 81, ../sass/screen.scss */
+#wall #feed .tweet_list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 85, ../sass/screen.scss */
+#wall #feed .tweet_list li {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+  margin: 10px 0;
+  padding: 5px;
+}
+/* line 90, ../sass/screen.scss */
+#wall #feed .tweet_list .tweet_time {
+  display: block;
+  font-size: .8em;
+  font-weight: 100;
+}
+/* line 94, ../sass/screen.scss */
+#wall #feed .tweet_list .tweet_time a {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 98, ../sass/screen.scss */
+#wall #feed .tweet_list .tweet_text {
+  display: block;
 }

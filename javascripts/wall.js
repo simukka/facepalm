@@ -11,15 +11,23 @@ jQuery(document).ready(function($) {
     callback:function (message) {
     	console.log(message);			
     	if($('#faces li').hasClass(message.uuid)){
-    		$('#faces li.'+message.uuid).find('.mini-message').text(msg2).fadeIn().delay(speed).fadeOut();
+    		console.log('duplicate');
     		// Pulse Glow
     		/*setInterval(function(){
     			$('#faces li.'+message.uuid).toggleClass('highlight');
     		}, 1000);*/
+    		$('#faces li.'+message.uuid).queue('highlightQueue',function(){
+    			console.log('Highlight Queue');
+    			setTimeout(function(){
+    				$('#faces li.'+message.uuid).find('.mini-message').text(msg2).fadeIn().delay(speed).fadeOut();
     		$('#faces li.'+message.uuid).addClass('highlight');
     		setTimeout(function(){
     			$('#faces li.'+message.uuid).removeClass('highlight');
     		},speed);
+    				$(this).dequeue('highlightQueue');
+    			},1000);
+    		})
+    		
     	} else {
 				$("#faces").append(
 					$(".face:first").clone().html(function(){
@@ -38,6 +46,14 @@ jQuery(document).ready(function($) {
 				facewall();
 			}
     }
+  });
+
+	$("#twitter").tweet({
+  	count: 10,
+    query: "fox",
+    loading_text: "searching twitter…",
+    template: "{avatar}{time}{text}",
+    refresh_interval: 5
   });
 
 	

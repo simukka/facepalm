@@ -34,7 +34,10 @@ body,html {
 			&.highlight {
   			@include background(radial-gradient(#08CCF9,#0D9CD8 150px));
  				@include box-shadow(0 0 40px #0D9CD8);
-  			border: 1px solid rgba(255,255,255,.2);				
+  			border: 1px solid rgba(255,255,255,.2);
+  			width: 150px;
+  			height: 150px;
+  			position: absolute;				
 			}
 			.avatar {
 				position: absolute;
@@ -69,6 +72,31 @@ body,html {
 				color: #0D9CD8;
 				text-shadow: 0 0 5px #0D9CD8;
 				text-align: center;
+			}
+		}
+	}
+	#feed {
+		display: block;
+		padding: 1em;
+		.tweet_list {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			li {
+				border-bottom: 3px solid rgba(255,255,255,.1);
+				margin: 10px 0;
+				padding: 5px;
+			}
+			.tweet_time {
+				display: block;
+				font-size: .8em;
+				font-weight: 100;
+				a {
+					color: rgba(255,255,255,.5);
+				}
+			}
+			.tweet_text {
+				display: block;
 			}
 		}
 	}
