@@ -1,7 +1,8 @@
 @import 'compass/css3';
 @import "compass/css3/transition";
 @import "compass/css3/images";
-@import 'http://localhost:3001/devassets/quilt.css';
+//@import 'http://localhost:3001/devassets/quilt.css';
+@import 'http://cdn.quilt.janrain.com/2.0.8/quilt.css';
 
 body,html {
 	@include border-radius(0px);

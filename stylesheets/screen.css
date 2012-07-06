@@ -1,5 +1,5 @@
-@import 'http://localhost:3001/devassets/quilt.css';
-/* line 6, ../sass/screen.scss */
+@import 'http://cdn.quilt.janrain.com/2.0.8/quilt.css';
+/* line 7, ../sass/screen.scss */
 body, html {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -8,7 +8,7 @@ body, html {
   border-radius: 0px;
 }
 
-/* line 9, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 #wall {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -21,12 +21,12 @@ body, html {
   height: 100%;
   width: 100%;
 }
-/* line 15, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 #wall #faces {
   display: inline-block;
   padding: 1em;
 }
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 #wall #faces .face {
   width: 150px;
   height: 150px;
@@ -54,11 +54,11 @@ body, html {
   -o-transition: all, 1s ease;
   transition: all, 1s ease;
 }
-/* line 30, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 #wall #faces .face.hide {
   display: none;
 }
-/* line 33, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 #wall #faces .face.highlight {
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, color-stop(0%, #08ccf9), color-stop(100%, #0d9cd8));
   background: -webkit-radial-gradient(#08ccf9, #0d9cd8 150px);
@@ -71,7 +71,7 @@ body, html {
   box-shadow: 0 0 40px #0d9cd8;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 #wall #faces .face .avatar {
   position: absolute;
   top: 10px;
@@ -89,7 +89,7 @@ body, html {
   border: 1px solid rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
-/* line 48, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 #wall #faces .face .avatar img {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -99,17 +99,17 @@ body, html {
   height: 100%;
   width: 100%;
 }
-/* line 53, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 #wall #faces .face .avatar .janrain-icon-64 {
   margin: 32px;
   color: rgba(0, 0, 0, 0.2);
   text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 #wall #faces .face .profile {
   display: none;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #wall #faces .face .mini-message {
   position: absolute;
   bottom: -15px;
